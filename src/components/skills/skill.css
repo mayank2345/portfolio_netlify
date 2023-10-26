@@ -84,5 +84,8 @@
     .skillBar{
         flex-direction: column;
     }
+    .slidebar{
+        font-size: 3vw;
+    }
      
 }
