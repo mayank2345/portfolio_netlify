@@ -4,6 +4,7 @@ import {PiBagSimpleFill} from 'react-icons/pi'
 import mayank from '../../assets/mayank.png'
 import Popup from 'reactjs-popup';
 import Hire from '../Hire/hire';
+import splash from '../../assets/splash.gif'
 
 const Intro = () => {
   return (
@@ -28,6 +29,7 @@ const Intro = () => {
                 } 
             </Popup>
             <img src={mayank} alt='MayankImage' className='myImage'></img>
+            <img src={splash} alt='gif' className='gif'></img>
         </div>
       </section>
   )
