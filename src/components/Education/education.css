@@ -1,0 +1,62 @@
+#education{
+    overflow: hidden;
+    width: 100vw;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.eduTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    
+}
+.eduCard{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+    
+}
+
+.collage{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: #0C1446;
+}
+
+.colLogoImg{
+    object-fit: cover;
+    height: 8rem;
+    width: 8rem;
+    margin-right: 2rem;
+}
+
+.collDate{
+    font-style: italic;
+    font-size: 0.7rem;
+    font-weight:lighter;
+    margin-right: 2rem;
+    text-align: center;
+}
+.subList{
+    padding-top: 1rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    max-width: 50rem;
+}
+@media screen and (max-width:480px) {
+    .collegeInfo>p {
+        font-size: 3vw;
+    }
+    .collage{
+        flex-direction: column;
+    }
+     
+}
