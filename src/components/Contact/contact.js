@@ -10,13 +10,14 @@ import gfgIcon from '../../assets/gfgIcon.png'
 const Contact = () => {
 
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
+          alert('Email Sent!!!');
+          document.getElementById('contactMe').reset();
       }, (error) => {
           console.log(error.text);
       });
@@ -27,7 +28,7 @@ const Contact = () => {
         <div id='contact'>
             <h2 className='contactPageTitle'>Contact Me</h2>
             <span className='contactDesc'>Please fill out the form below to discuss any work opportunities</span>
-            <form ref={form} className='contactForm' onSubmit={sendEmail}>
+            <form ref={form} id='contactMe' className='contactForm' onSubmit={sendEmail}>
                 <input type='text' className='name' placeholder='Your Name' name="from_name" id="from_name" required/>
                 <input type='email' className='emailId' placeholder='Your Email' name="from_email" id="from_email" required/>
                 <textarea name='message' rows="5" placeholder='Your Message' className='msg' required/>
