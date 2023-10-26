@@ -5,7 +5,6 @@ import srm from "../../assets/srm.png"
 
 const Education = () => {
   return (
-    <div>
       <section id='education'>
         <h2 className='eduTitle'>Education</h2>
         <div className='eduCard'>
@@ -48,7 +47,6 @@ const Education = () => {
             </div>
         </div>
       </section>
-    </div>
   )
 }
 

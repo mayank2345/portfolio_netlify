@@ -30,10 +30,33 @@
 .skillBar{
     display: flex;
     margin: 1rem;
+    margin-bottom: 3rem;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
     background: #0C1446;
+    cursor: pointer;
+    box-shadow: 10px 7px 5px #175873;
+    
 }
+
+.slidebar{
+    display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background:  #145DA0;
+    z-index: -3;
+    transition: transform 0.3s;
+    position: sticky;
+    height: 5rem;
+    margin-top: -4rem;
+    box-shadow: 9px 9px 4px #175873;
+}
+.slidebar.moved-down {
+    transform: translateY(-50px);
+}
+
+
 .skillBarImg{
     object-fit: cover;
     height: 3rem;

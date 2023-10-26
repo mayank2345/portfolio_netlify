@@ -6,7 +6,6 @@ import linkedInIcon from '../../assets/linkedInIcon.png'
 import githubIcon from '../../assets/githubIcon.png'
 import gfgIcon from '../../assets/gfgIcon.png'
 
-
 const Contact = () => {
 
   const form = useRef();
@@ -16,7 +15,7 @@ const Contact = () => {
     emailjs.sendForm(process.env.REACT_APP_YOUR_SERVICE_ID, process.env.REACT_APP_YOUR_TEMPLATE_ID, form.current, process.env.REACT_APP_YOUR_PUBLIC_KEY)
       .then((result) => {
           console.log(result.text);
-          alert('Email Sent!!!');
+          alert('Thanks for reaching me out.');
           document.getElementById('contactMe').reset();
       }, (error) => {
           console.log(error.text);
