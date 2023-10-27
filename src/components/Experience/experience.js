@@ -8,16 +8,16 @@ const Experience = () => {
     <section id='experience'>
         <h2 className='expTitle'>Experience</h2>
             <div className='companyCard'>
-                <div className='company'>
+                <div className='company' onClick={() => {
+                      var url = "https://drive.google.com/file/d/1_Q8LNBbajQ1fFfZdJ_eNd-LU7BrU7TpZ/view";
+                      window.open(url)
+                      }}>
                     <div className='companyLogoCol'>
                         <img src={Intel} alt='ComLogo' className='companyLogo'></img>
                         <div className='companyDate'>June 2022 - June 2023</div>
                     </div>
                     <div className='companyContent'>
-                        <h2 className='companyName'>Intel Technologies<button className='certificateBtm' onClick={() => {
-                      var url = "https://drive.google.com/file/d/1_Q8LNBbajQ1fFfZdJ_eNd-LU7BrU7TpZ/view";
-                      window.open(url)
-                      }}>Certificate</button></h2>
+                        <h2 className='companyName'>Intel Technologies</h2>
                         <div className='companyRole'>Network Software Intern</div>
                         <ul className='paralist'>
                             <li><p>Demonstrated expertise in both frontend and backend development, leveraging Python, Flask, Jinja2, SQL Query, PostgreSQL, JavaScript, HTML, CSS, and Bootstrap 5 to contribute to the implementation and enhancement of new features.</p></li>

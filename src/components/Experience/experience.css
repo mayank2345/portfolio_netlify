@@ -27,6 +27,10 @@
     border-radius: 0.5rem;
     background: #0C1446;
 }
+.company:hover{
+    box-shadow: 9px 9px 4px #175873;
+    cursor: pointer;
+}
 .companyLogo{
     object-fit: cover;
     height: 3rem;
@@ -52,17 +56,4 @@
     .company{
         flex-direction: column;
     }
-}
-.certificateBtm{
-    border: none;
-    border-radius: 0.5rem;
-    background: #175873;
-    float: right;
-    padding: 0.5rem;
-    color: white;
-    position: relative;
-}
-.certificateBtm:hover{
-    cursor: pointer;
-    color: #E5DDC8;
 }

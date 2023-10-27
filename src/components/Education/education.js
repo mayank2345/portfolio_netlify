@@ -8,7 +8,10 @@ const Education = () => {
       <section id='education'>
         <h2 className='eduTitle'>Education</h2>
         <div className='eduCard'>
-            <div className='collage'>
+            <div className='collage' onClick={() => {
+                            var url = "https://drive.google.com/file/d/19nLRvWiM7yILu5TkgukQvtJddflt-3s9/view?usp=drive_link";
+                            window.open(url)
+                            }}>
                 <div className='logoCol'>
                     <img src={nitr} alt='CollegeLogo' className='colLogoImg'></img>
                     <div className='collDate'>Sept 2021-June 2023</div>
@@ -25,8 +28,12 @@ const Education = () => {
                         <li><p>Computer Vision</p></li>
                     </ul>
                 </div>
+                
             </div>
-            <div className='collage'>
+            <div className='collage' onClick={() => {
+                            var url = "https://drive.google.com/file/d/1gPE09pajDDEN5w4xoND1-v2cv9NFxsDn/view?usp=sharing";
+                            window.open(url)
+                            }}>
                 <div className='logoCol'>
                     <img src={srm} alt='CollegeLogo' className='colLogoImg'></img>
                     <div className='collDate'>July 2015-May 2019</div>

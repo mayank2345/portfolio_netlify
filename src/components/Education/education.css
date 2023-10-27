@@ -30,20 +30,38 @@
     border-radius: 0.5rem;
     background: #0C1446;
 }
+.collage:hover{
+    box-shadow: 9px 9px 4px #175873;
+    cursor: pointer;
+}
 
+.logoCol{
+    align-items: center;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.5rem;
+
+}
 .colLogoImg{
     object-fit: cover;
-    height: 8rem;
-    width: 8rem;
-    margin-right: 2rem;
+    height: 7rem;
+    width: 7rem;
+    margin-top: -4rem;
+    margin-bottom: 0.25rem;
 }
 
 .collDate{
     font-style: italic;
     font-size: 0.7rem;
     font-weight:lighter;
-    margin-right: 2rem;
     text-align: center;
+    margin-bottom: 0.5rem;
+}
+.collegeInfo{
+    padding: 0 1rem;
+    align-items: center;
+    justify-content: center;
 }
 .subList{
     padding-top: 1rem;
@@ -58,5 +76,11 @@
     .collage{
         flex-direction: column;
     }
+    .logoCol{
+        margin-top: 4rem;
+        align-items: baseline;
+    }
      
 }
+
+  

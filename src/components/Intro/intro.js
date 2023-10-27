@@ -9,6 +9,7 @@ import splash from '../../assets/splash.gif'
 const Intro = () => {
   return (
       <section id='intro'>
+        <img src={mayank} alt='MayankImage' className='myImage'></img>
         <div className='introContent'>
             <span className='hello'>Hello,</span>
             <span className='introText'>
@@ -28,7 +29,6 @@ const Intro = () => {
                     )
                 } 
             </Popup>
-            <img src={mayank} alt='MayankImage' className='myImage'></img>
             <img src={splash} alt='gif' className='gif'></img>
         </div>
       </section>
