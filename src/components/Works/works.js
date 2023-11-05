@@ -1,7 +1,7 @@
 import React from 'react'
 import './works.css'
 import shareMe from '../../assets/shareMe.png'
-import workingOnIt from '../../assets/workingOnIt.jpg'
+import textUtility from '../../assets/textUtility.png'
 
 
 const Works = () => {
@@ -15,7 +15,13 @@ const Works = () => {
                       window.open(url)
                       }}><img src={shareMe} alt='proImg' className='worksImg'></img>
                       </button>
-            <img src={workingOnIt} alt='proImg' className='worksImg'></img>
+
+        <button type='button' className='portfoliobtn' onClick={() => {
+                      var url = "https://texttoolutility.netlify.app/";
+                      window.open(url)
+                      }}><img src={textUtility} alt='proImg' className='worksImg'></img>
+                      </button>
+            
         </div>
       </section>
   )
